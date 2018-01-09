@@ -1,0 +1,2 @@
+一开始是想抓取一部较多短评电影的短评，但是没想到现在豆瓣电影已经限制了短评显示在480条以内，所以就想到了抓取某一明星的所有参演电影的短评，使用的ADSL代理是客户端部署在淘宝购买的一台ADSL服务器上，服务器端部署在阿里云服务器上，使用了崔庆才博主的Tornado+Redis维护ADSL拨号服务器代理池，博客文章 https://cuiqingcai.com/4596.html ，其github地址是https://github.com/Germey/ADSLProxyPool
+其中客户端client的sender代码中正则表达式需要进行修改，因为租用的ADSL服务器版本原因ifconfig显示的内容与博主有所不同，因为使用ADSL切换IP爬取中依旧遇到未解决的问题，所以依旧在完善改进中，但尝试使用ADSL切换代理爬取可行。
